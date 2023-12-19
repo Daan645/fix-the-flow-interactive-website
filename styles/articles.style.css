@@ -1,0 +1,604 @@
+
+/* main settings */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* root colors */
+
+:root{
+    --main: #FFFFFF;
+    --primary: #4ECD5D;
+    --secondary: #6DA7DD;
+    --accent: #ff2f2fb4;
+    --greyone: #FAF8F8;
+    --dark: #000;
+}
+/* text styles */
+
+/* normal p */
+p{
+    font-size: 1em;
+    font-weight: 400;
+}
+/* strong p */
+.strong{
+    font-size: 1em;
+    font-weight: 600;
+}
+/* quote p */
+.quote{
+    font-size: 1.4em;
+    font-weight: 700;
+    font-style: italic;
+}
+/* italic p */
+.italic{
+    font-style: italic;
+}
+
+/* main fonts */
+h1{
+    font-size: 52px;
+    font-weight: 800;
+}
+h2{
+    font-size: 42px;
+    font-weight: 700;
+}
+h3{
+    font-size: 34px;
+    font-weight: 600;
+}
+h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+/* mobile */
+@media  screen and (min-width: 0px) and (max-width: 600px ) {
+    h1{
+        font-size: 38px;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+/* tablet */
+@media  screen and (min-width: 600px) and (max-width: 1000px ) {
+    h1{
+        font-size: 42px;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+    }
+    h3{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    h4{
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
+/* Buttons (not links!)*/
+/* primary--button */
+.primary--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+/* &hover */
+.primary--button:hover{
+    cursor: pointer;
+    background-color: var(--main);
+    color: var(--dark);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+
+/* secondary--button */
+.secondary--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--secondary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+/* &hover */
+.secondary--button:hover{
+    cursor: pointer;
+    background-color: var(--main);
+    color: var(--secondary);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+
+/* light--button */
+.light--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--main);
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+/* &hover */
+.light--button:hover{
+    cursor: pointer;
+    background-color: var(--main);
+    color: var(--secondary);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+
+/* dark--button */
+.dark--button{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--dark);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+/* &hover */
+.light--button:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--main);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+
+/* Links (a) styling*/
+/* primary--link */
+.primary--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+/* &hover */
+.primary--link:hover{
+    cursor: pointer;
+    background-color: var(--main);
+    color: var(--dark);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+
+/* secondary--link */
+.secondary--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--secondary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+/* &hover */
+.secondary--link:hover{
+    cursor: pointer;
+    background-color: var(--main);
+    color: var(--secondary);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+/* light--link */
+.light--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--main);
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+/* &hover */
+.light--link:hover{
+    cursor: pointer;
+    background-color: var(--main);
+    color: var(--secondary);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+
+/* dark--link */
+.dark--link{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--dark);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+}
+/* &hover */
+.light--link:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--main);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+/* end main settings */
+/* header */
+header{
+    padding: 1.5em 0em 0em 0em;
+    z-index: 99;
+    position: sticky;
+    background-color: #f7f7f3;
+    top: 0;
+}
+header svg{
+    position: absolute;
+    z-index: 0;
+
+}
+
+.header_full{
+    max-width: 1232px;
+    padding: 0 1em;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 2em;
+    z-index: 8;
+    position: relative;
+}
+.header_full ul{
+    padding-inline-start: 0px;
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+    z-index: 4;
+    margin-top: -1.2em;
+
+}
+
+.header_full h2{
+    color: var(--primary);
+}
+.header_full a{
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 16px;
+}
+.header_full a:hover{
+    color: var(--primary);
+}
+@media screen and (min-width: 1000px) {
+    header svg{
+        position: absolute;
+        z-index: 0;
+        margin-top: -34px;
+
+    }
+}
+/*End of header */
+
+/*main / articles*/
+main{
+    padding-top: 0;
+    text-align: center;
+}
+
+main h1{
+    font-size: 6em;
+    color: var(--primary);
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, vervaging, kleur */}
+
+#titleParagraph{
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.5em;
+    /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); !* x-offset, y-offset, vervaging, kleur *!*/
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40em;
+    height: 30em;
+    border-radius: 1em;
+    /*max-width: calc(25% - 10px);*/
+    /*max-height: 40em;*/
+    margin: 1em;
+    box-sizing: border-box;
+    background-color: red; /* Zorg ervoor dat dit overeenkomt met de kleur in je HTML-structuur */
+    /* Voeg andere stijlen toe aan je flex-items indien nodig */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+/*.flex-item:hover{*/
+/*    scale: 1.1;*/
+/*    transition: linear 0.2s;*/
+/*}*/
+
+.flex-item img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+
+.articleOverlayText{
+    font-size: 3em;
+    position: absolute;
+    padding: 0.8em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--main);
+    background-color: rgba(128, 128, 128, 00); /* Grijs met 50% transparantie */    border-radius: 0.25em;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Voeg een blur van 10 pixels toe aan de achtergrond */
+    transition: linear 1s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, vervaging, kleur */
+}
+
+.articleOverlayText:{
+
+}
+
+.articleOverlayText h2{
+    margin: 0;
+    font-weight: bold;
+
+}
+
+.articleOverlayText p{
+    display: none;
+}
+
+.articleOverlayText .primary--link,
+.articleOverlayText .secondary--link {
+    font-size: 0.2em;
+}
+
+.articleDescription{
+    font-size: 3em;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--main);
+    background-color: rgba(128, 128, 128, 0.8); /* Grijs met 50% transparantie */    border-radius: 0.25em;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Voeg een blur van 10 pixels toe aan de achtergrond */
+    transition: linear 0.5s;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.3);
+
+}
+
+.articleDescription h2{
+    margin: 0  0 0.5em 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, vervaging, kleur */
+
+}
+
+.articleOverlayP{
+    font-size: 0.5em;
+    margin: 0;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, vervaging, kleur */
+
+
+}
+
+
+
+.articleA{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3em;
+    width: 4em;
+    height: 0.8em;
+}
+
+.articleInfo{
+    padding: 0.8em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--secondary);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1em;
+    transform: scale(100%);
+    transition: ease-out 0.2s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, vervaging, kleur */
+}
+
+/* &hover */
+.articleInfo:hover{
+    cursor: pointer;
+    background-color: var(--main);
+    color: var(--secondary);
+    transform: scale(97%);
+    transition: ease-in 0.2s;
+}
+
+.articleA .primary--link,
+.articleA .articleInfo {
+    font-size: 0.3em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.3);
+
+}
+
+@media screen and (max-width: 600px) {
+    .flex-item {
+        width: 30em;
+        height: 20em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .flex-item {
+        width: 25em;
+        height: 15em;
+    }
+
+    .articleDescription h2{
+        margin: 0  0 0.5em 0;
+    }
+
+    .articleOverlayP{
+        font-size: 0.3em;
+        margin: 0;
+        line-height: 1.5;
+
+    }
+
+}
+
+/*@media screen and (max-width: 1360px) {*/
+/*    .flex-item {*/
+/*        !*width: calc(40.00% - 10px); !* Verander naar 33.33% voor 3 items per rij op kleinere schermen *!*!*/
+/*    }*/
+/*}*/
+
+
+
+
+/*@media screen and (max-width: 700px) {*/
+/*    .flex-container{*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    .flex-item {*/
+
+/*    }*/
+/*}*/
+/*end of main / articles*/
+
+/* footer */
+footer{
+    background-color: var(--secondary);
+    padding: 1em 2em  0em;
+    margin-top: 3em;
+}
+
+footer .content-footer{
+    max-width: 1232px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0em 1em;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.content-footer > h3 {
+    color: var(--main);
+}
+.content-footer > p {
+    color: var(--main);
+
+}
+.content-footer ul{
+    padding-inline-start: 0px;
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+
+}
+.content-footer  a{
+    text-decoration: none;
+    color: var(--main);
+    font-weight: 600;
+    font-size: 16px;
+}
+.content-footer  a:hover{
+    color: var(--greyone);
+}
+
+@media  screen and (min-width: 0px) and (max-width: 600px ) {
+    footer{
+
+        height: max-content;
+    }
+
+    footer .content-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0em 1em;
+        gap: 0.3em;
+        align-items: center;
+
+    }
+    .content-footer h3{
+        color: var(--main);
+    }
+    .content-footer ul{
+        padding-inline-start: 0px;
+        list-style-type: none;
+        display: flex;
+        gap: 1em;
+
+    }
+}
+/*end footer*/
