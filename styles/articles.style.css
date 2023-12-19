@@ -16,6 +16,13 @@ body{
 }
 /* text styles */
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--main);
+        color: var(--main);
+    }
+}
+
 /* normal p */
 p{
     font-size: 1em;
