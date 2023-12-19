@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Artikelen</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../style.css"/>
+    <style>
+        body {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-areas:
+      "header header header"
+        "nav main footer"
+        "nav main footer";
+        }
 
+        header{
+            grid-area: header;
+        }
+
+        nav{
+            grid-area: nav;
+        }
+
+        main{
+            grid-area: main;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body id="basic-layout-8">
+<header><h1>Basic Layout 8</h1></header>
+<nav><a href="../../index.html">Terug naar het overzicht</a></nav>
+<main></main>
+<footer></footer>
 </body>
 </html>
+>
